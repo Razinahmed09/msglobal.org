@@ -1,5 +1,5 @@
 /**
-* Folio - Multipurpose Bootstrap Theme
+* Folio - Ms Global Inc
 *
 * @author StackBros (#)
 * @version 2.0.0

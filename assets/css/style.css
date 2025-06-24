@@ -6308,6 +6308,13 @@ fieldset:disabled .btn {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+  nav .nav-link .dropdown-menu {
+      width: 290px !important;
+    /* margin: 0 auto; */
+    left: -40px !important;
+    top: 38px !important;
+}
+
 .card {
   --bs-card-spacer-y: 1.25rem;
   --bs-card-spacer-x: 1.25rem;
@@ -19757,6 +19764,9 @@ fieldset:disabled .btn {
 .portfolio-svg {
   fill: #ffffff !important;
 }
+.webDev-svg {
+  fill: #ffffff !important;
+}
 
 .fill-mode {
   fill: var(--bs-gray-900) !important;
@@ -20804,11 +20814,13 @@ fieldset:disabled .btn {
 .accordion.accordion-step-border .accordion-collapse.collapse.show {
   border-bottom: 1px solid var(--bs-primary) !important;
   border-radius: 0;
+  
 }
 
 .accordion.accordion-step-border .accordion-body {
   padding-left: 3rem;
   padding-bottom: 1.5rem;
+  
 }
 
 .accordion.accordion-bg-body-light .accordion-item {
@@ -24870,7 +24882,9 @@ small,
 .inner-container {
   margin-top: -100px !important;
 }
-
+.un-Skills {
+  margin: 5rem 0;
+}
 
 .inner-container {
   max-width: 900px;
@@ -26261,9 +26275,30 @@ button.text-primary-hover:hover {
 } */
 
 .portfolio-banner {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%); */
   background-color: black;
 }
+
+.webDev-banner {
+  /* background: url("/assets/images/MSglobal-images/web-dev-banner.jpg") linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%); */
+  /* background-size: cover */
+}
+.web-port-parent {
+  overflow: hidden;
+}
+.web-port-img {
+  /* filter: brightness(.8);
+  transition: all .6s ease-in-out; */
+  /* overflow: hidden; */
+}
+.web-port-img:hover {
+  filter: brightness(1);
+  transform: scale(1.1);
+}
+
+.webBtn {
+    padding: 10px 14px;
+  }
 
 .footer-logo {
   height: 90px;

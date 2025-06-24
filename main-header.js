@@ -193,18 +193,18 @@ class Header extends HTMLElement {
                     >Services</a
                   >
                   <div
-                    class="dropdown-menu dropdown-menu-size-xl dropdown-menu-center p-xl-3"
+                    class="dropdown-menu dropdown-menu-center p-xl-3"
                   >
-                    <div class="row row-cols-1 row-cols-md-2 pt-2">
-                      <div class="col-8">
+                    <div class="">
+                      <div class="">
                         <div
                           class="dropdown-item bg-secondary-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3"
                         >
                           <a
                             class="icon-link icon-link-hover text-primary-hover stretched-link"
-                            href="#"
+                            href="/web-development.html"
                             target="_blank"
-                            ><i class="bi bi-chevron-right"></i>Service1
+                            ><i class="bi bi-chevron-right"></i>Web Development
                           </a>
                         </div>
                         <div
@@ -212,9 +212,9 @@ class Header extends HTMLElement {
                         >
                           <a
                             class="icon-link icon-link-hover text-primary-hover stretched-link"
-                            href="#"
+                            href="/mobile-app-development.html"
                             target="_blank"
-                            ><i class="bi bi-chevron-right"></i>Service2
+                            ><i class="bi bi-chevron-right"></i>Android & IOS Development
                           </a>
                         </div>
                       </div>

@@ -5,7 +5,7 @@ class Footer extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-      <footer class="bg-dark position-relative pt-6 pt-lg-8" data-bs-theme="dark">
+      <footer class="unique-footer bg-dark position-relative pt-6 pt-lg-8" data-bs-theme="dark">
       <!-- Shape decoration -->
       <!-- <div class="position-absolute top-0 end-0 mt-n9 z-index-9 d-none d-lg-block">
 		<img src="assets/images/elements/grad-shape/06.png" class="robot " alt="Shape">

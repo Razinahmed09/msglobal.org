@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from stackbros.in/folio/landing/portfolio-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 May 2025 10:43:56 GMT -->
+<head>
+	
+	<title>MS Global Inc</title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>MS Global Inc IT Solutions</title>
+  <meta name="author" content="Ms Global Inc" />
+  <meta name="description" content="Ms Global Inc" />
+
+	<!-- Dark mode -->
+	<script>
+		const storedTheme = localStorage.getItem('theme')
+ 
+		const getPreferredTheme = () => {
+			if (storedTheme) {
+				return storedTheme
+			}
+			return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'light'
+		}
+
+		const setTheme = function (theme) {
+			if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.setAttribute('data-bs-theme', 'dark')
+			} else {
+				document.documentElement.setAttribute('data-bs-theme', theme)
+			}
+		}
+
+		setTheme(getPreferredTheme())
+
+		window.addEventListener('DOMContentLoaded', () => {
+		    var el = document.querySelector('.theme-icon-active');
+			if(el != 'undefined' && el != null) {
+				const showActiveTheme = theme => {
+				const activeThemeIcon = document.querySelector('.theme-icon-active use')
+				const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+				const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
+
+				document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+					element.classList.remove('active')
+				})
+
+				btnToActive.classList.add('active')
+				activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+			}
+
+			window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+				if (storedTheme !== 'light' || storedTheme !== 'dark') {
+					setTheme(getPreferredTheme())
+				}
+			})
+
+			showActiveTheme(getPreferredTheme())
+
+			document.querySelectorAll('[data-bs-theme-value]')
+				.forEach(toggle => {
+					toggle.addEventListener('click', () => {
+						const theme = toggle.getAttribute('data-bs-theme-value')
+						localStorage.setItem('theme', theme)
+						setTheme(theme)
+						showActiveTheme(theme)
+					})
+				})
+
+			}
+		})
+		
+	</script>
+
+	<!-- Favicon -->
+	  <link rel="shortcut icon" href="assets/images/MSglobal-images/MS LOGO-02.png" />
+
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+	
+<!-- Header START -->
+<script src="main-header.js"></script>
+  <main-header></main-header>
+<!-- Header END -->
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+
+<!-- =======================
+Hero START -->
+    <section class="bg-dark position-relative pt-xl-8 overflow-hidden portfolio-banner">
+      <!-- Decoration START -->
+      <!-- Grad blur -->
+      <div class="position-absolute top-0 start-0 mt-n9 ms-n5">
+        <img src="assets/images/elements/grad-shape/blur-decoration.svg" class="blur-7 opacity-2" alt="Grad shape" />
+      </div>
+
+      <!-- Grad blur -->
+      <div class="position-absolute top-0 start-50 mt-n9 ms-n9">
+        <img src="assets/images/elements/grad-shape/blur-decoration.svg" class="blur-8 opacity-1" alt="Grad shape" />
+      </div>
+      <!-- Decoration START -->
+
+      <!-- Title and content -->
+      <div class="inner-container text-center mx-auto position-relative pt-4 pt-sm-5">
+        <!-- Breadcrumb -->
+        <nav class="mb-2 d-flex justify-content-center" aria-label="breadcrumb">
+          <ol class="breadcrumb breadcrumb-dark pt-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Portfolio
+            </li>
+          </ol>
+        </nav>
+        <!-- Title -->
+        <h1 class="mb-5 text-white">
+          <span class="heading-bg">Android & IOS Development</span>
+        </h1>
+      </div>
+
+      <!-- Curve decoration -->
+      <span>
+        <svg class="position-absolute bottom-0 start-0 mb-n1 mb-lg-n5 mb-xxl-n7" viewBox="0 0 1950 237"
+          style="enable-background: new 0 0 1950 237" xml:space="preserve">
+          <path class="fill-body portfolio-svg" d="M1949.5,236.4H0v-164c717.2-131.2,1598.5-54.7,1949.5,0V236.4z" />
+        </svg>
+      </span>
+    </section>
+    <!-- =======================
+Hero END -->
+
+
+<!-- =======================
+Why choose us START -->
+<section class="pt-0 pb-5">
+	<div class="container">
+		<div class="row">
+			<!-- Image and rating -->
+			<div class="col-md-6 position-relative">
+				<!-- Rocket image -->
+				<div class="position-absolute top-0 start-0 ms-xl-5" style="animation: move 10s infinite ease-in-out;">
+					<img src="assets/images/elements/rocket-02.png" class="h-150px rotate-335" alt="rocket image">
+				</div>
+
+				<div class="row ps-xl-7">
+					<!-- Image -->
+					<div class="col-sm-8">
+						<img src="assets/images/about/13.jpg" class="rounded-pill" alt="image">
+					</div>
+					<!-- Trsutpilot rating -->
+					<div class="col-sm-4 col-md-8 col-lg-5 mt-auto ms-lg-n5 mb-5">
+						<div class="card shadow rounded text-center p-0" style="animation: mymove 4s infinite;">
+							<!-- Card body -->
+							<div class="card-body p-3">
+								<h6 class="h1">4.8</h6>
+								<ul class="list-inline d-flex justify-content-center gap-2 mb-1">
+									<li class="list-inline-item me-0"><i class="bi bi-star-fill text-warning"></i></li>
+									<li class="list-inline-item me-0"><i class="bi bi-star-fill text-warning"></i></li>
+									<li class="list-inline-item me-0"><i class="bi bi-star-fill text-warning"></i></li>
+									<li class="list-inline-item me-0"><i class="bi bi-star-fill text-warning"></i></li>
+									<li class="list-inline-item me-0"><i class="bi bi-star-half text-warning"></i></li>
+								</ul>
+								<span>2855 Reviews</span>
+							</div>	
+							<!-- Card footer -->
+								<div class="card-footer bg-dark p-3">
+								<img src="assets/images/elements/trustpilot-light.svg" class="h-30px" alt="">
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Contents -->
+			<div class="col-md-6 col-lg-5 ms-auto mt-5 mt-md-0">
+				<!-- Title -->
+				<h2>Build Apps That Build Business</h2>
+				<p>
+					At MS Global, we understand that impactful app development goes beyond just design. It blends engaging content, strong visuals, and strategic messaging to attract and convert your audience.
+				</p>
+				<!-- Accordion START -->
+				<div class="accordion accordion-icon accordion-border-bottom mt-5" id="accordionFaq">
+					<!-- Item -->
+					<div class="accordion-item mb-3">
+						<div class="accordion-header font-base" id="heading-1">
+							<button class="accordion-button fw-semibold rounded collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+								<span class="lead">Beyond Design: The True Power of App Development</span>
+							</button>
+						</div>
+						<!-- Body -->
+						<div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#accordionFaq">
+							<div class="accordion-body pb-0">
+								At MS Global, we understand that impactful app development goes beyond just design. It blends engaging content, strong visuals, and strategic messaging to attract and convert your audience. While graphics and images enhance appeal, the power of well-crafted words remains essential to connect with your customers and drive results
+							</div>
+						</div>
+					</div>
+
+					<!-- Item -->
+					<div class="accordion-item mb-3">
+						<div class="accordion-header font-base" id="heading-2">
+							<button class="accordion-button fw-semibold rounded collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+								<span class="lead">Why Presentation Matters More Than You Think</span>
+							</button>
+						</div>
+						<!-- Body -->
+						<div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionFaq">
+							<div class="accordion-body pb-0">
+								If your business isn’t reaching its full potential, the issue might not be the product—but the way it’s presented. Our professional App Development services are designed to simplify and strengthen your marketing, making it more precise, attractive, and effective.
+							</div>
+						</div>
+					</div>
+
+					<!-- Item -->
+					<div class="accordion-item mb-3">
+						<div class="accordion-header font-base" id="heading-3">
+							<button class="accordion-button fw-semibold rounded collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+								<span class="lead">Partner with Experts You Can Trust</span>
+							</button>
+						</div>
+						<!-- Body -->
+						<div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#accordionFaq">
+							<div class="accordion-body pb-0">
+								Whether you're selling products or offering services, our expert team ensures your app supports your goals and elevates your brand presence. We offer a 100% satisfaction and money-back guarantee if results don’t meet expectations.
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Accordion END -->
+			</div>
+		</div> <!-- Row END -->
+	</div>
+</section>
+<!-- =======================
+Why choose us END -->
+
+<!-- =======================
+Process START -->
+<section class="pt-0 pb-5 my-5">
+	<div class="container-fluid position-relative">
+		<div class="max-width-1550 bg-dark position-relative rounded-4 overflow-hidden py-5 py-sm-6 py-lg-8" data-bs-theme="dark">
+			<div class="container position-relative">
+				<!-- Title -->
+				<h2 class="mb-4 mb-lg-6">Step-by-Step Process</h2>
+
+				<!-- Steps START -->
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+					<!-- Step item -->
+					<div class="col">
+						<h4 class="text-primary-grad">01</h4>
+						<h6>Discovery & Planning</h6>
+						<p class="mb-0">We begin by understanding your business goals, target audience, and project requirements.</p>
+					</div>
+
+					<!-- Step item -->
+					<div class="col">
+						<h4 class="text-primary-grad">02</h4>
+						<h6>Design & Prototyping</h6>
+						<p class="mb-0">Our design team creates wireframes and prototypes based on the project plan.</p>
+					</div>
+
+					<!-- Step item -->
+					<div class="col">
+						<h4 class="text-primary-grad">03</h4>
+						<h6>Development</h6>
+						<p class="mb-0">In this phase, our developers bring the design to life using the latest technologies and best practices.</p>
+					</div>
+
+					<!-- Step item -->
+					<div class="col">
+						<h4 class="text-primary-grad">04</h4>
+						<h6>Testing & Launch</h6>
+						<p class="mb-0">Before going live, we conduct thorough testing to identify and fix any issues.</p>
+					</div>
+				</div>
+				<!-- Steps END -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =======================
+Process END -->
+
+<!-- =======================
+Portfolio START -->
+    <section class="pt-0">
+      <div class="container">
+        <div class="col-12">
+          <div class="w-75 mx-auto pb-3">
+          <h2 class="text-center">
+            Showcasing Innovation in Every <br><span class="heading-bg"> App We Build </span>
+          </h2>
+          </div>
+        </div>
+        <!-- Portfolio item START -->
+        <div class="card card-img-scale bg-transparent p-0 mb-4 mb-lg-0">
+          <!-- Border -->
+          <div class="position-absolute top-50 start-50 translate-middle border opacity-4 h-100 d-none d-lg-block">
+          </div>
+          <!-- Dot circle -->
+          <span
+            class="position-absolute top-50 start-50 translate-middle rounded-circle bg-primary p-1 d-none d-lg-block">
+            <span class="d-block rounded-circle bg-body p-1"> </span>
+          </span>
+
+          <div class="row align-items-center g-0">
+            <!-- Image -->
+            <div class="col-lg-6 p-lg-5">
+              <div class="card-img-scale-wrapper rounded-4">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.moyenexpress.moyen_express&hl=en">
+                  <div class="un-section"></div>
+                  <div class="un-section">
+                    <div class="reveal">
+                      <img src="assets/images/MSglobal-images/mobile-app/moyenexpress.jpeg" class="rounded-4"
+                        alt="portfolio image">
+                    </div>
+                  </div>
+                </a>
+                <div class="un-section"></div>
+              </div>
+            </div>
+            <!-- Content -->
+            <div class="col-lg-6">
+              <div class="card-body px-2 p-lg-5">
+                <!-- Client logo -->
+                <div class="mb-3 mb-lg-4">
+                  <img src="assets/images/MSglobal-images/logo.png" class="light-mode-item h-50px" alt="client logo">
+                  <img src="assets/images/MSglobal-images/logo.png" class="dark-mode-item h-50px" alt="client logo">
+                </div>
+                <!-- Title -->
+                <h5 class="mb-3">Moyen Xpress</h5>
+                <p>MoyenXpress is your ultimate eCommerce destination, offering a seamless and intuitive shopping experience. Our app provides access to a diverse range of products, from everyday essentials to exclusive items, all curated to meet your needs.</p>
+                <!-- List -->
+                <ul class="nav nav-divider align-items-center mb-3 mb-lg-4">
+                  <li class="nav-item heading-color">2024</li>
+                  <li class="nav-item heading-color">Branding</li>
+                  <li class="nav-item heading-color">Marketing</li>
+                  <li class="nav-item heading-color">UI/UX design</li>
+                </ul>
+                <!-- Button -->
+                <a href="#" class="link-primary-grad icon-link icon-link-hover">Request a Quote <i
+                    class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio item END -->
+
+        <!-- Portfolio item START -->
+        <div class="card card-img-scale bg-transparent p-0 mb-4 mb-lg-0">
+          <!-- Border -->
+          <div class="position-absolute top-50 start-50 translate-middle border opacity-4 h-100 d-none d-lg-block">
+          </div>
+          <!-- Dot circle -->
+          <span
+            class="position-absolute top-50 start-50 translate-middle rounded-circle bg-primary p-1 d-none d-lg-block">
+            <span class="d-block rounded-circle bg-body p-1"> </span>
+          </span>
+
+          <div class="row align-items-center g-0">
+            <!-- Content -->
+            <div class="col-lg-6 order-2">
+              <div class="card-body px-2 p-lg-5">
+                <!-- Client logo -->
+                <div class="mb-3 mb-lg-4">
+                  <img src="assets/images/MSglobal-images/logo.png" class="light-mode-item h-50px" alt="client logo">
+                  <img src="assets/images/MSglobal-images/logo.png" class="dark-mode-item h-50px" alt="client logo">
+                </div>
+                <!-- Title -->
+                <h5 class="mb-3">Cabify</h5>
+                <p>Whether you want to move around the city in a cab, order private car rides or send your things from one area of the city to the other, Cabify is your transportation and mobility app. And without giving up the most important thing: the safety and quality of your trips.
+                </p>
+                <!-- List -->
+                <ul class="nav nav-divider align-items-center mb-3 mb-lg-4">
+                  <li class="nav-item heading-color">2023</li>
+                  <li class="nav-item heading-color">Branding</li>
+                  <li class="nav-item heading-color">Marketing</li>
+                  <li class="nav-item heading-color">UI/UX design</li>
+                </ul>
+                <!-- Button -->
+                <a href="#" class="link-primary-grad icon-link icon-link-hover">Request a Quote <i
+                    class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Image -->
+            <div class="col-lg-6 order-1 order-lg-2 p-lg-5">
+              <div class="card-img-scale-wrapper rounded-4">
+                <a href="https://play.google.com/store/apps/details?id=com.cabify.rider&hl=en" target="_blank">
+                  <div class="un-section"></div>
+                  <div class="un-section">
+                    <div class="reveal">
+                      <img src="assets/images/MSglobal-images/mobile-app/cabify.jpeg" class="rounded-4" alt="portfolio image">
+                    </div>
+                  </div>
+                  <div class="un-section"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio item END -->
+
+        <!-- Portfolio item START -->
+        <div class="card card-img-scale bg-transparent p-0 mb-4 mb-lg-0">
+          <!-- Border -->
+          <div class="position-absolute top-50 start-50 translate-middle border opacity-4 h-100 d-none d-lg-block">
+          </div>
+          <!-- Dot circle -->
+          <span
+            class="position-absolute top-50 start-50 translate-middle rounded-circle bg-primary p-1 d-none d-lg-block">
+            <span class="d-block rounded-circle bg-body p-1"> </span>
+          </span>
+
+          <div class="row align-items-center g-0">
+            <!-- Image -->
+            <div class="col-lg-6 p-lg-5">
+              <div class="card-img-scale-wrapper rounded-4">
+                <a href="https://play.google.com/store/apps/details?id=com.jaded.jaded" target="_blank">
+                  <div class="un-section"></div>
+                  <div class="un-section">
+                    <div class="reveal">
+                      <img src="assets/images/MSglobal-images/mobile-app/jaded2.png" class="rounded-4" alt="portfolio image">
+                    </div>
+                  </div>
+                  <div class="un-section"></div>
+                </a>
+              </div>
+            </div>
+            <!-- Content -->
+            <div class="col-lg-6">
+              <div class="card-body px-2 p-lg-5">
+                <!-- Client logo -->
+                <div class="mb-3 mb-lg-4">
+                  <img src="assets/images/MSglobal-images/logo.png" class="light-mode-item h-50px" alt="client logo">
+                  <img src="assets/images/MSglobal-images/logo.png" class="dark-mode-item h-50px" alt="client logo">
+                </div>
+                <!-- Title -->
+                <h5 class="mb-3">JADED I'LLUZIONS</h5>
+                <p>Jaded I’lluzions provides Akashic Records readings to inspire self-discovery, personal growth, and spiritual alignment. Through one-hour virtual sessions, users can explore their life’s purpose and deeper connections.</p>
+                <!-- List -->
+                <ul class="nav nav-divider align-items-center mb-3 mb-lg-4">
+                  <li class="nav-item heading-color">2022</li>
+                  <li class="nav-item heading-color">Branding</li>
+                  <li class="nav-item heading-color">Marketing</li>
+                  <li class="nav-item heading-color">UI/UX design</li>
+                </ul>
+                <!-- Button -->
+                <a href="#" class="link-primary-grad icon-link icon-link-hover">Request a Quote <i
+                    class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio item END -->
+
+        <!-- Portfolio item START -->
+        <div class="card card-img-scale bg-transparent p-0 mb-4 mb-lg-0">
+          <!-- Border -->
+          <div class="position-absolute top-50 start-50 translate-middle border opacity-4 h-100 d-none d-lg-block">
+          </div>
+          <!-- Dot circle -->
+          <span
+            class="position-absolute top-50 start-50 translate-middle rounded-circle bg-primary p-1 d-none d-lg-block">
+            <span class="d-block rounded-circle bg-body p-1"> </span>
+          </span>
+
+          <div class="row align-items-center g-0">
+            <!-- Content -->
+            <div class="col-lg-6 order-2">
+              <div class="card-body px-2 p-lg-5">
+                <!-- Client logo -->
+                <div class="mb-3 mb-lg-4">
+                  <img src="assets/images/MSglobal-images/logo.png" class="light-mode-item h-50px" alt="client logo">
+                  <img src="assets/images/MSglobal-images/logo.png" class="dark-mode-item h-50px" alt="client logo">
+                </div>
+                <!-- Title -->
+                <h5 class="mb-3">JUMIA Online Shopping</h5>
+                <p>Avoid crowds, stay safe and shop from the comfort of your home. With Jumia 🛒, you open your doors to savings and convenience! <br>
+                Shop safely and conveniently online with Jumia, the largest online retailer in Africa.</p>
+                <!-- List -->
+                <ul class="nav nav-divider align-items-center mb-3 mb-lg-4">
+                  <li class="nav-item heading-color">2021</li>
+                  <li class="nav-item heading-color">Branding</li>
+                  <li class="nav-item heading-color">Marketing</li>
+                  <li class="nav-item heading-color">UI/UX design</li>
+                </ul>
+                <!-- Button -->
+                <a href="#" class="link-primary-grad icon-link icon-link-hover">Request a Quote <i
+                    class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Image -->
+            <div class="col-lg-6 order-1 order-lg-2 p-lg-5">
+              <div class="card-img-scale-wrapper rounded-4">
+                <a href="https://play.google.com/store/apps/details?id=com.jumia.android&hl=en" target="_blank">
+                  <div class="un-section"></div>
+                  <div class="un-section">
+                    <div class="reveal">
+                      <img src="assets/images/MSglobal-images/mobile-app/jumia.jpeg" class="rounded-4 " alt="portfolio image">
+                    </div>
+                  </div>
+                  <div class="un-section"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio item END -->
+        <!-- Portfolio item START -->
+        <div class="card card-img-scale bg-transparent p-0 mb-4 mb-lg-0 more-content" style="display: none;"> 
+          <!-- Border -->
+          <div class="position-absolute top-50 start-50 translate-middle border opacity-4 h-100 d-none d-lg-block">
+          </div>
+          <!-- Dot circle -->
+          <span
+            class="position-absolute top-50 start-50 translate-middle rounded-circle bg-primary p-1 d-none d-lg-block">
+            <span class="d-block rounded-circle bg-body p-1"> </span>
+          </span>
+
+          <div class="row align-items-center g-0">
+            <!-- Image -->
+            <div class="col-lg-6 order-1 order-lg-2 p-lg-5">
+              <div class="card-img-scale-wrapper rounded-4">
+                <a href="https://play.google.com/store/apps/details?id=com.onepagecrm&hl=en" target="_blank">
+                  <div class="un-section"></div>
+                  <div class="un-section">
+                    <div class="reveal">
+                      <img src="assets/images/MSglobal-images/mobile-app/onepageCrm.jpeg" class="rounded-4 " alt="portfolio image">
+                    </div>
+                  </div>
+                  <div class="un-section"></div>
+                </a>
+              </div>
+            </div>
+            <!-- Content -->
+            <div class="col-lg-6 order-2">
+              <div class="card-body px-2 p-lg-5">
+                <!-- Client logo -->
+                <div class="mb-3 mb-lg-4">
+                  <img src="assets/images/MSglobal-images/logo.png" class="light-mode-item h-50px" alt="client logo">
+                  <img src="assets/images/MSglobal-images/logo.png" class="dark-mode-item h-50px" alt="client logo">
+                </div>
+                <!-- Title -->
+                <h5 class="mb-3">OnePageCRM - Simple CRM System</h5>
+                <p>OnePageCRM is a unique combination of a simple CRM app and a productivity tool with follow-up reminders next to every contact. It helps you keep in touch with clients, prospects, and partners, and nurture business relationships.</p>
+                <!-- List -->
+                <ul class="nav nav-divider align-items-center mb-3 mb-lg-4">
+                  <li class="nav-item heading-color">2021</li>
+                  <li class="nav-item heading-color">Branding</li>
+                  <li class="nav-item heading-color">Marketing</li>
+                  <li class="nav-item heading-color">UI/UX design</li>
+                </ul>
+                <!-- Button -->
+                <a href="#" class="link-primary-grad icon-link icon-link-hover">Request a Quote <i
+                    class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+        <!-- Portfolio item END -->
+
+        <!-- Load more button -->
+        <div class="d-grid justify-content-center mt-6">
+          <a href="#!" role="button" class="btn btn-secondary mb-0" onclick="toggleContent(this)">
+            Load more work
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- =======================
+Portfolio END -->
+
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- =======================
+Footer START -->
+<footer class="bg-dark pt-6 pt-lg-8" data-bs-theme="dark">
+	<div class="container">
+		<!-- Link widgets -->
+		<div class="row g-4">
+
+			<!-- Widget item -->
+			<div class="col-md-6 col-xl-4">
+				<!-- logo -->
+				<a href="index.html">
+					<img class="h-40px" src="assets/images/logo-light.svg" alt="logo">
+				</a>
+				<p class="my-3 my-xl-4">A Bootstrap theme that's both stylish and functional, perfect for any type of technology or corporate website.</p>
+			</div>
+
+			<div class="col-xl-7 ms-auto">
+				<div class="row g-4">
+					<!-- Widget item -->
+					<div class="col-6 col-md-3">
+						<h6 class="mb-3 mb-xl-4">Company</h6>
+						<!-- Links -->
+						<ul class="nav flex-column gap-1">
+							<li class="nav-item"><a class="nav-link pt-0" href="about-v1.html">About us</a></li>
+							<li class="nav-item"><a class="nav-link" href="contact-us.html">Contact us</a></li>
+							<li class="nav-item"><a class="nav-link" href="career.html">Career <span class="badge bg-primary ms-2">2 jobs</span></a></li>
+							<li class="nav-item"><a class="nav-link" href="career-single.html">Career detail</a></li>
+							<li class="nav-item"><a class="nav-link" href="contact-us-v2.html">Become a partner</a></li>
+							<li class="nav-item"><a class="nav-link" href="service-v1.html">Services</a></li>
+						</ul>
+					</div>
+
+					<!-- Widget item -->
+					<div class="col-6 col-md-3">
+						<h6 class="mb-3 mb-xl-4">Resources</h6>
+						<!-- Links -->
+						<ul class="nav flex-column gap-1">
+							<li class="nav-item"><a class="nav-link pt-0" href="portfolio-case-study-v1.html">Case studies</a></li>
+							<li class="nav-item"><a class="nav-link" href="pricing-v1.html">Pricing <span class="badge bg-success ms-2">New</span></a></li>
+							<li class="nav-item"><a class="nav-link" href="blog-minimal.html">Blogs</a></li>
+							<li class="nav-item"><a class="nav-link" href="blog-single.html">Blog detail</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Success stories<i class="bi bi-box-arrow-up-right small ms-2"></i></a></li>
+						</ul>
+					</div>
+					
+					<!-- Widget item -->
+					<div class="col-sm-6 col-md-6">
+						<h6 class="mb-3 mb-xl-4">Download our app</h6>
+						<p class="mb-3">Get instant access to exclusive features for FREE!</p>
+						<div class="row g-2 mb-4 mb-sm-5">
+							<!-- Google play store button -->
+							<div class="col-5 col-sm-6 col-md-5 col-lg-4 col-xl-5">
+								<a href="#"> <img src="assets/images/elements/google-play.svg" alt=""> </a>
+							</div>
+							<!-- App store button -->
+							<div class="col-5 col-sm-6 col-md-5 col-lg-4 col-xl-5">
+								<a href="#"> <img src="assets/images/elements/app-store.svg" alt="app-store"> </a>
+							</div>
+						</div>
+
+						<!-- Social buttons -->
+						<span class="heading-color fw-semibold">Follow on:</span>
+						<ul class="list-inline align-items-center mb-0 mt-3">
+							<li class="list-inline-item"> <a class="btn btn-xs btn-icon bg-facebook" href="#"><i class="bi bi-facebook lh-base"></i></a> </li>
+							<li class="list-inline-item"> <a class="btn btn-xs btn-icon bg-instagram" href="#"><i class="bi bi-instagram lh-base"></i></a> </li>
+							<li class="list-inline-item"> <a class="btn btn-xs btn-icon bg-twitter-x" href="#"><i class="bi bi-twitter-x lh-base"></i></a> </li>
+							<li class="list-inline-item"> <a class="btn btn-xs btn-icon bg-linkedin" href="#"><i class="bi bi-linkedin lh-base"></i></a> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Divider -->
+		<hr class="mt-xl-5 mb-0 opacity-1">
+
+		<!-- Bottom footer -->
+		<div class="d-md-flex justify-content-between align-items-center text-center text-lg-start py-4">
+			<!-- copyright text -->
+			<div class="text-body small mb-3 mb-md-0"> Copyrights ©2025 Folio. Build by <a href="#" target="_blank" class="text-body text-primary-hover hover-underline-animation">StackBros</a>. </div>
+			
+			<!-- Policy link -->
+			<ul class="nav d-flex justify-content-center gap-1 mb-0">
+				<li class="nav-item"><a class="nav-link small py-0" href="#">Privacy policy</a></li>
+				<li class="nav-item"><a class="nav-link small py-0 pe-0" href="#">Terms &amp; conditions</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<!-- =======================
+Footer END -->
+
+<!-- Back to top -->
+<div class="back-top"></div>
+
+<!-- Bootstrap JS -->
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Theme Functions -->
+<script src="assets/js/functions.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="/assets/js/gsap.js"></script>
+</body>
+
+<!-- Mirrored from stackbros.in/folio/landing/portfolio-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 May 2025 10:43:57 GMT -->
+</html>

@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from stackbros.in/folio/landing/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 May 2025 10:42:26 GMT -->
+
+<head>
+  <title>MS Global Inc</title>
+
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="author" content="StackBros" />
+  <meta name="description" content="Ms Global Inc" />
+
+  <!-- Dark mode -->
+  <script>
+    const storedTheme = localStorage.getItem("theme");
+
+    const getPreferredTheme = () => {
+      if (storedTheme) {
+        return storedTheme;
+      }
+      return window.matchMedia("(prefers-color-scheme: light)").matches
+        ? "light"
+        : "light";
+    };
+
+    const setTheme = function (theme) {
+      if (
+        theme === "auto" &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+        document.documentElement.setAttribute("data-bs-theme", "dark");
+      } else {
+        document.documentElement.setAttribute("data-bs-theme", theme);
+      }
+    };
+
+    setTheme(getPreferredTheme());
+
+    window.addEventListener("DOMContentLoaded", () => {
+      var el = document.querySelector(".theme-icon-active");
+      if (el != "undefined" && el != null) {
+        const showActiveTheme = (theme) => {
+          const activeThemeIcon = document.querySelector(
+            ".theme-icon-active use"
+          );
+          const btnToActive = document.querySelector(
+            `[data-bs-theme-value="${theme}"]`
+          );
+          const svgOfActiveBtn = btnToActive
+            .querySelector(".mode-switch use")
+            .getAttribute("href");
+
+          document
+            .querySelectorAll("[data-bs-theme-value]")
+            .forEach((element) => {
+              element.classList.remove("active");
+            });
+
+          btnToActive.classList.add("active");
+          activeThemeIcon.setAttribute("href", svgOfActiveBtn);
+        };
+
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", () => {
+            if (storedTheme !== "light" || storedTheme !== "dark") {
+              setTheme(getPreferredTheme());
+            }
+          });
+
+        showActiveTheme(getPreferredTheme());
+
+        document
+          .querySelectorAll("[data-bs-theme-value]")
+          .forEach((toggle) => {
+            toggle.addEventListener("click", () => {
+              const theme = toggle.getAttribute("data-bs-theme-value");
+              localStorage.setItem("theme", theme);
+              setTheme(theme);
+              showActiveTheme(theme);
+            });
+          });
+      }
+    });
+  </script>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/MSglobal-images/MS LOGO-02.png" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
+    rel="stylesheet" />
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" />
+  <link rel="stylesheet" type="text/css" href="assets/vendor/swiper/swiper-bundle.min.css" />
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+  <style>
+    /* .unique-footer {
+      padding: 0;
+    } */
+  </style>
+<body>
+  <!-- Header START -->
+  <script src="main-header.js"></script>
+  <main-header></main-header>
+  <!-- Header END -->
+
+  <!-- **************** MAIN CONTENT START **************** -->
+  <main>
+    <!-- ======================= Hero START -->
+    <section class="bg-dark position-relative pt-xl-8 overflow-hidden portfolio-banner webDev-banner">
+      <!-- Decoration START -->
+      <!-- Grad blur -->
+      <div class="position-absolute top-0 start-0 mt-n9 ms-n5">
+        <img src="assets/images/elements/grad-shape/blur-decoration.svg" class="blur-7 opacity-2" alt="Grad shape" />
+      </div>
+
+      <!-- Grad blur -->
+      <div class="position-absolute top-0 start-50 mt-n9 ms-n9">
+        <img src="assets/images/elements/grad-shape/blur-decoration.svg" class="blur-8 opacity-1" alt="Grad shape" />
+      </div>
+      <!-- Decoration START -->
+
+      <!-- Title and content -->
+      <div class="inner-container text-center mx-auto position-relative pt-4 pt-sm-5">
+        <!-- Breadcrumb -->
+        <nav class="mb-2 d-flex justify-content-center" aria-label="breadcrumb">
+          <ol class="breadcrumb breadcrumb-dark pt-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Portfolio
+            </li>
+          </ol>
+        </nav>
+        <!-- Title -->
+        <h1 class="mb-5 text-white">
+          <span class="heading-bg">Web Development</span>
+        </h1>
+      </div>
+
+      <!-- Curve decoration -->
+      <span>
+        <svg class="position-absolute bottom-0 start-0 mb-n1 mb-lg-n5 mb-xxl-n7" viewBox="0 0 1950 237"
+          style="enable-background: new 0 0 1950 237" xml:space="preserve">
+          <path class="fill-body webDev-svg" d="M1949.5,236.4H0v-164c717.2-131.2,1598.5-54.7,1949.5,0V236.4z" />
+        </svg>
+      </span>
+    </section>
+    <!-- ======================= Hero END -->
+
+    <!-- ======================= Office gallery START -->
+
+    <!-- ======================= Office gallery END -->
+
+    <!-- =======================
+Core features START -->
+    <section class="pt-md-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <!-- Feature item -->
+            <div class="row g-4 align-items-center mb-6">
+              <div class="col-md-6 pe-md-5">
+                <div class="un-section"></div>
+                <div class="un-section">
+                  <div class="bg-secondary-grad p-4 rounded-4">
+                  <div class="reveal">
+                      <img src="assets/images/elements/saas-decoration/tab-3.png" alt="tab image">
+                    </div>
+                  </div>
+                </div>
+                <div class="un-section"></div>
+              </div>
+
+              <div class="col-md-6">
+                <h4 class="mb-md-4">Comprehensive data analysis</h4>
+                <p class="mb-0">Dive deep into your business data with our advanced analytics tools. Identify trends,
+                  uncover hidden opportunities, and make informed decisions based on comprehensive data analysis.</p>
+              </div>
+            </div>
+
+            <!-- Feature item -->
+            <div class="row g-4 align-items-center mb-6">
+              <div class="col-md-6 order-2">
+                <h4 class="mb-md-4">Real-time data access</h4>
+                <p class="mb-0">Stay ahead of the curve with real-time reporting. Our analytics feature provides you
+                  with immediate access to the latest data, enabling you to monitor performance and make quick
+                  adjustments.</p>
+              </div>
+
+              <div class="col-md-6 ps-md-5 order-md-2">
+                <div class="un-section"></div>
+                <div class="un-section">
+                <div class="bg-secondary p-4 rounded-4">
+                    <div class="reveal">
+                  <img src="assets/images/elements/saas-decoration/tab-2.png" alt="tab image">
+                </div>
+              </div>
+              </div>
+              <div class="un-section"></div>
+              </div>
+            </div>
+
+            <!-- Feature item -->
+            <div class="row g-4 align-items-center">
+              <div class="col-md-6 pe-md-5">
+                <div class="un-section"></div>
+                <div class="un-section">
+                  <div class="bg-secondary-grad p-4 rounded-4">
+                  <div class="reveal">
+                  <img src="assets/images/elements/saas-decoration/step-3.png" class="rounded-4" alt="tab image">
+                </div>
+                </div>
+                </div>
+                <div class="un-section"></div>
+              </div>
+
+              <div class="col-md-6">
+                <h4 class="mb-md-4">Customizable and interactive dashboards</h4>
+                <p class="mb-0">Tailor your analytics experience with fully customizable dashboards. Choose from a
+                  variety of widgets, charts, and graphs to create a personalized view of your key metrics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- =======================
+Core features END -->
+
+    <!-- =======================
+Services START -->
+
+    <!-- =======================
+Services END -->
+
+    <!-- =======================
+How it work and counter START -->
+    <section class="bg-dark position-relative overflow-hidden py-5 pt-sm-5">
+      <!-- Grad blur -->
+      <div class="position-absolute bottom-0 end-0 mb-n8">
+        <img src="assets/images/elements/grad-shape/blur-decoration-2.svg" class="opacity-2 blur-9" alt="Grad shape" />
+      </div>
+
+      <!-- skewed divider -->
+      <span class="position-absolute top-0 start-0 ">
+        <svg class="text-white rtl-flip webDev-svg" width="1920" height="197" viewBox="0 0 1920 197" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0H1920V5.5L0 197V0Z" fill="currentColor" />
+        </svg>
+      </span>
+      <!-- Decoration END -->
+
+      <div class="container position-relative pt-lg-8 pt-xl-0" data-bs-theme="dark">
+        <!-- Step content START -->
+        <div class="row align-items-end align-items-xxl-center">
+          <!-- Image -->
+          <div class="col-md-9 col-lg-6 mx-auto pe-xl-7">
+            <div class="un-section"></div>
+            <div class="un-section">
+              <div class="reveal">
+                <div class="web-port-parent rounded-4">
+              <img src="assets/images/MSglobal-images/resized_web_port_800x1067.jpeg" class="web-port-img"
+                alt="process image" />
+            </div>
+            </div>
+            </div>
+            <div class="un-section"></div>
+          </div>
+
+          <!-- Content -->
+          <div class="col-lg-6 mt-5 mt-xl-7">
+            <span class="text-primary lead">Smart. Scalable. Tailored to Your Business.</span>
+            <h2 class="mt-3 mb-4">Our Comprehensive Digital Solutions</h2>
+
+            <!-- Accordion START -->
+            <div class="accordion accordion-step-border" id="accordionFaq">
+              <!-- Item -->
+              <div class="accordion-item">
+                <div class="accordion-header font-base" id="heading-1">
+                  <button class="accordion-button fs-6" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                    <span class="accordion-step-number">01</span> E-Commerce Solutions
+                  </button>
+                </div>
+                <!-- Body -->
+                <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1"
+                  data-bs-parent="#accordionFaq">
+                  <div class="accordion-body pt-0">
+                    Delivering fully customizable and easy-to-install E-Commerce platforms with powerful backend
+                    administration and user-friendly front-end catalogues. Tailored modules designed around your
+                    business goals and technical needs.
+                    <div>
+                    <a href="javascript:;" class="btn btn-primary-grad my-2">Request a Quote</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="accordion-item">
+                <div class="accordion-header font-base" id="heading-2">
+                  <button class="accordion-button fs-6 collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                    <span class="accordion-step-number">02</span>
+                    Responsive Web Design & CMS Integration
+                  </button>
+                </div>
+                <!-- Body -->
+                <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
+                  data-bs-parent="#accordionFaq">
+                  <div class="accordion-body pt-0">
+                    Modern, mobile-friendly websites built with CMS for real-time updates—no technical expertise
+                    required. Empowering businesses to manage and edit content easily across devices without ongoing
+                    development costs.
+                    <div>
+                    <a href="javascript:;" class="btn btn-primary-grad my-2">Request a Quote</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="accordion-item">
+                <div class="accordion-header font-base" id="heading-3">
+                  <button class="accordion-button fs-6 collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                    <span class="accordion-step-number">03</span> Dynamic Web Portals
+                  </button>
+                </div>
+                <!-- Body -->
+                <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3"
+                  data-bs-parent="#accordionFaq">
+                  <div class="accordion-body pt-0">
+                    Custom web portals that unify diverse content sources into an intuitive, configurable interface.
+                    Ideal for intranets, dashboards, and data-driven applications with role-based content management and
+                    flexible integration options.
+                    <div>
+                    <a href="javascript:;" class="btn btn-primary-grad my-2">Request a Quote</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion END -->
+          </div>
+          <div class="col-12">
+             <!-- Technology logos -->
+          <div class=" un-Skills tools-content text-center">
+            <h4>AI Skills & Tools</h4>
+            <!-- Logo list -->
+            <ul class="list-inline d-flex justify-content-center flex-wrap gap-4 my-5 my-lg-6">
+              <!-- Logo item -->
+              <li class="list-inline-item me-0">
+                <a href="#"
+                  class="icon-xl btn-transition bg-white border border-white border-opacity-10 d-flex justify-content-center align-items-center rounded-2"
+                  style="--bs-bg-opacity: 0.05">
+                  <img src="assets/images/MSglobal-images/language/html.png" class="h-40px" alt="icon" />
+                </a>
+              </li>
+
+              <!-- Logo item -->
+              <li class="list-inline-item me-0">
+                <a href="#"
+                  class="icon-xl btn-transition bg-white border border-white border-opacity-10 d-flex justify-content-center align-items-center rounded-2"
+                  style="--bs-bg-opacity: 0.05">
+                  <img src="assets/images/MSglobal-images/language/css.png" class="h-40px" alt="icon" />
+                </a>
+              </li>
+
+              <!-- Logo item -->
+              <li class="list-inline-item me-0">
+                <a href="#"
+                  class="icon-xl btn-transition bg-white border border-white border-opacity-10 d-flex justify-content-center align-items-center rounded-2"
+                  style="--bs-bg-opacity: 0.05">
+                  <img src="assets/images/MSglobal-images/language/JavaScript.png" class="h-40px" alt="icon" />
+                </a>
+              </li>
+              <!-- Logo item -->
+              <li class="list-inline-item me-0">
+                <a href="#"
+                  class="icon-xl btn-transition bg-white border border-white border-opacity-10 d-flex justify-content-center align-items-center rounded-2"
+                  style="--bs-bg-opacity: 0.05">
+                  <img src="assets/images/MSglobal-images/language/react.png" class="h-40px" alt="icon" />
+                </a>
+              </li>
+
+              <!-- Logo item -->
+              <li class="list-inline-item me-0">
+                <a href="#"
+                  class="icon-xl btn-transition bg-white border border-white border-opacity-10 d-flex justify-content-center align-items-center rounded-2"
+                  style="--bs-bg-opacity: 0.05">
+                  <img src="assets/images/MSglobal-images/language/jquery.png" class="h-40px" alt="icon" />
+                </a>
+              </li>
+
+              <!-- Logo item -->
+              <li class="list-inline-item me-0">
+                <a href="#"
+                  class="icon-xl btn-transition bg-white border border-white border-opacity-10 d-flex justify-content-center align-items-center rounded-2"
+                  style="--bs-bg-opacity: 0.05">
+                  <img src="assets/images/MSglobal-images/language/php.png" class="h-40px" alt="icon" />
+                </a>
+              </li>
+
+              <!-- Logo item -->
+              <li class="list-inline-item me-0">
+                <a href="#"
+                  class="icon-xl btn-transition bg-white border border-white border-opacity-10 d-flex justify-content-center align-items-center rounded-2"
+                  style="--bs-bg-opacity: 0.05">
+                  <img src="assets/images/MSglobal-images/language/laravel.png" class="h-40px" alt="icon" />
+                </a>
+              </li>
+
+              <!-- Logo item -->
+              <li class="list-inline-item me-0">
+                <a href="#"
+                  class="icon-xl btn-transition bg-white border border-white border-opacity-10 d-flex justify-content-center align-items-center rounded-2"
+                  style="--bs-bg-opacity: 0.05">
+                  <img src="assets/images/MSglobal-images/language/python.webp" class="h-40px" alt="icon" />
+                </a>
+              </li>
+
+              <!-- Logo item -->
+              <li class="list-inline-item me-0">
+                <a href="#"
+                  class="icon-xl btn-transition bg-white border border-white border-opacity-10 d-flex justify-content-center align-items-center rounded-2"
+                  style="--bs-bg-opacity: 0.05">
+                  <img src="assets/images/MSglobal-images/language/sql.png" class="h-40px" alt="icon" />
+                </a>
+              </li>
+            </ul>
+
+            <!-- Button -->
+            <!-- <a class="btn btn-outline-secondary icon-link icon-link-hover" href="#">Uncover our AI capabilities<i
+                class="bi bi-arrow-right"></i> -->
+            </a>
+          </div>
+          </div>
+        </div>
+        <!-- Step content END -->
+
+        <!-- Counter START -->
+        <div class="row g-4">
+          <!-- Counter item -->
+          <div class="col-sm-6 col-md-3">
+            <div class="d-flex justify-content-center h-100 pe-xl-4">
+              <!-- Counter content -->
+              <div>
+                <div class="d-flex mb-2 mb-sm-6">
+                  <h4 class="purecounter h1 mb-0" data-purecounter-start="0" data-purecounter-end="17"
+                    data-purecounter-delay="300">
+                    0
+                  </h4>
+                  <span class="h1 text-primary mb-0">+</span>
+                </div>
+                <p class="lead">Years of experience</p>
+              </div>
+
+              <!-- Divider -->
+              <div class="vr bg-white bg-opacity-25 ms-auto d-none d-sm-block"></div>
+            </div>
+          </div>
+
+          <!-- Counter item -->
+          <div class="col-sm-6 col-md-3">
+            <div class="d-flex justify-content-center h-100 pe-xl-4">
+              <!-- Counter content -->
+              <div>
+                <div class="d-flex mb-2 mb-sm-6">
+                  <h4 class="purecounter h1 mb-0" data-purecounter-start="0" data-purecounter-end="200"
+                    data-purecounter-delay="300">
+                    0
+                  </h4>
+                  <span class="h1 text-pink mb-0">+</span>
+                </div>
+                <p class="lead">In-house projects completed</p>
+              </div>
+
+              <!-- Divider -->
+              <div class="vr bg-white bg-opacity-25 ms-auto d-none d-sm-block"></div>
+            </div>
+          </div>
+
+          <!-- Counter item -->
+          <div class="col-sm-6 col-md-3">
+            <div class="d-flex justify-content-center h-100 pe-xl-4">
+              <!-- Counter content -->
+              <div>
+                <div class="d-flex mb-2 mb-sm-6">
+                  <h4 class="purecounter h1 mb-0" data-purecounter-start="0" data-purecounter-end="32"
+                    data-purecounter-delay="300">
+                    0
+                  </h4>
+                  <span class="h1 text-info mb-0">+</span>
+                </div>
+                <p class="lead">Awards and counting</p>
+              </div>
+
+              <!-- Divider -->
+              <div class="vr bg-white bg-opacity-25 ms-auto d-none d-sm-block"></div>
+            </div>
+          </div>
+
+          <!-- Counter item -->
+          <div class="col-sm-6 col-md-3">
+            <div class="d-flex justify-content-center">
+              <!-- Counter content -->
+              <div>
+                <div class="d-flex mb-2 mb-sm-6">
+                  <span class="h1 mb-0"></span>
+                  <h4 class="purecounter h1 mb-0" data-purecounter-start="0" data-purecounter-end="10"
+                    data-purecounter-delay="300">
+                    0
+                  </h4>
+                  <span class="h1 text-warning mb-0">K</span>
+                </div>
+                <p class="lead">Satisfied users</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Counter END -->
+      </div>
+    </section>
+    <!-- =======================
+How it work and counter END -->
+
+  <!-- Product features START -->
+    <section class="bg-secondary-grad overflow-hidden position-relative py-5 portfolio-sec">
+      <!-- Geo gard pattern decoration -->
+      <div class="position-absolute bottom-0 start-0 ms-n8 mb-n6">
+        <img src="assets/images/elements/geo-grad-pattern.svg" class="h-500px opacity-2" alt="pattern" />
+      </div>
+
+      <div class="container">
+        <!-- Title and slider button -->
+        <div class="row mb-4 mb-md-5">
+          <!-- Title -->
+          <div class="col-md-8 col-xl-6">
+            <h2>
+              <span class="heading-bg">Success Stories</span> in Design &
+              Development
+            </h2>
+          </div>
+          <!-- Buttons -->
+          <div class="col-md-4 col-xl-6">
+            <!-- Slider arrow -->
+            <div class="d-flex justify-content-md-end gap-3 position-relative mt-3">
+              <a href="#"
+                class="btn btn-lg btn-white btn-icon rounded-circle mb-0 swiper-button-prev-feature rtl-flip"><i
+                  class="bi bi-arrow-left"></i></a>
+              <a href="#"
+                class="btn btn-lg btn-white btn-icon rounded-circle mb-0 swiper-button-next-feature rtl-flip"><i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Features slider START -->
+        <div class="swiper swiper-outside-end-n20" data-swiper-options='{
+			"spaceBetween": 50,
+			"loop": true,
+			"autoplay":{
+				"pauseOnMouseEnter": true
+			},
+			"navigation":{
+				"nextEl":".swiper-button-next-feature",
+				"prevEl":".swiper-button-prev-feature"
+			},
+			"breakpoints": { 
+				"576": {"slidesPerView": 2},
+				"992": {"slidesPerView": 3},
+				"1200": {"slidesPerView": 4}
+			}}'>
+          <div class="swiper-wrapper">
+            <!-- Feature item -->
+            <div class="swiper-slide">
+              <div class="card card-img-scale rounded-4 overflow-hidden">
+                <!-- Card Image -->
+                <img src="assets/images/MSglobal-images/portfolio/moyenexpress-DlnZiT4T.png" class="img-scale"
+                  alt="portfolio-img" />
+                <!-- BG overlay -->
+                <div class="bg-overlay bg-dark opacity-4"></div>
+
+                <!-- Card elements -->
+                <div class="card-img-overlay p-4 p-xxl-5">
+                  <h5 class="text-white">MOYENEXPRESS</h5>
+                  <p class="text-white">
+                    Shop anything, anywhere—fast and easy with Moyen Xpress.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature item -->
+            <div class="swiper-slide">
+              <div class="card card-img-scale rounded-4 overflow-hidden">
+                <!-- Card Image -->
+                <img src="assets/images/MSglobal-images/portfolio/jumia.jpg" class="img-scale" alt="portfolio-img" />
+                <!-- BG overlay -->
+                <div class="bg-overlay bg-dark opacity-4"></div>
+
+                <!-- Card elements -->
+                <div class="card-img-overlay p-4 p-xxl-5">
+                  <h5 class="text-white">JUMIA</h5>
+                  <p class="text-white">
+                    Africa’s leading e-commerce platform, active in 9
+                    countries.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature item -->
+            <div class="swiper-slide">
+              <div class="card card-img-scale rounded-4 overflow-hidden">
+                <!-- Card Image -->
+                <img src="assets/images/MSglobal-images/portfolio/itailor.jpg" class="img-scale" alt="portfolio-img" />
+                <!-- BG overlay -->
+                <div class="bg-overlay bg-dark opacity-4"></div>
+
+                <!-- Card elements -->
+                <div class="card-img-overlay p-4 p-xxl-5">
+                  <h5 class="text-white">ITAILOR</h5>
+                  <p class="text-white">
+                    Free Monogramming, Unlimited Designs, and 450+ Premium
+                    Cotton Fabrics.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature item -->
+            <div class="swiper-slide">
+              <div class="card card-img-scale rounded-4 overflow-hidden">
+                <!-- Card Image -->
+                <img src="assets/images/MSglobal-images/portfolio/ONEPAGE.jpg" class="img-scale" alt="portfolio-img" />
+                <!-- BG overlay -->
+                <div class="bg-overlay bg-dark opacity-4"></div>
+
+                <!-- Card elements -->
+                <div class="card-img-overlay p-4 p-xxl-5">
+                  <h5 class="text-white">ONEPAGECRM</h5>
+                  <p class="text-white">
+                    A simple CRM built for your core business needs
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature item -->
+            <div class="swiper-slide">
+              <div class="card card-img-scale rounded-4 overflow-hidden">
+                <!-- Card Image -->
+                <img src="assets/images/MSglobal-images/portfolio/cabify.com_es-tmeQX-95.png" class="img-scale"
+                  alt="portfolio-img" />
+                <!-- BG overlay -->
+                <div class="bg-overlay bg-dark opacity-4"></div>
+
+                <!-- Card elements -->
+                <div class="card-img-overlay p-4 p-xxl-5">
+                  <h5 class="text-white">CABIFY</h5>
+                  <p class="text-white">
+                    Enjoy geolocated trips, verified drivers, and a safety
+                    button for peace of mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card card-img-scale rounded-4 overflow-hidden">
+                <!-- Card Image -->
+                <img src="assets/images/MSglobal-images/portfolio/thread.jpg" class="img-scale" alt="portfolio-img" />
+                <!-- BG overlay -->
+                <div class="bg-overlay bg-dark opacity-4"></div>
+
+                <!-- Card elements -->
+                <div class="card-img-overlay p-4 p-xxl-5">
+                  <h5 class="text-white">THREADBOX</h5>
+                  <p class="text-white">
+                    Experience the world’s #1 AI-powered 24/7 self-serve
+                    Redbox dry cleaning machine.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Features slider END -->
+      </div>
+    </section>
+    <!-- =======================
+        Product features END -->
+
+
+
+    <!-- =======================
+newsletter START -->
+  
+    <!-- ======================= newsletter END -->
+  </main>
+  <!-- **************** MAIN CONTENT END **************** -->
+
+  <!-- =======================Footer START -->
+ <script src="main-footer.js"></script>
+  <main-footer></main-footer>
+  <!-- =======================Footer END -->
+
+  <!-- Back to top -->
+  <div class="back-top"></div>
+
+  <!-- Bootstrap JS -->
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--Vendors-->
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounterjs/dist/purecounter_vanilla.js"></script>
+
+  <!-- Theme Functions -->
+  <script src="assets/js/functions.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="/assets/js/gsap.js"></script>
+</body>
+
+<!-- Mirrored from stackbros.in/folio/landing/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 May 2025 10:42:53 GMT -->
+
+</html>
