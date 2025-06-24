@@ -32,7 +32,7 @@ class Footer extends HTMLElement {
           <div class="col-xl-7 ms-auto">
             <div class="row g-4">
               <!-- Widget item -->
-              <div class="col-6 col-md-3">
+              <div class="col-6 col-md-4">
                 <h6 class="mb-3 mb-xl-4">Company</h6>
                 <!-- Links -->
                 <ul class="nav flex-column gap-1">
@@ -61,7 +61,7 @@ class Footer extends HTMLElement {
               </div>
 
               <!-- Widget item -->
-              <div class="col-6 col-md-3">
+              <div class="col-6 col-md-4">
                 <h6 class="mb-3 mb-xl-4">Resources</h6>
                 <!-- Links -->
                 <ul class="nav flex-column gap-1">
@@ -89,34 +89,10 @@ class Footer extends HTMLElement {
                 </ul>
               </div>
 
-              <!-- Widget item -->
-              <div class="col-sm-6 col-md-6">
-                <h6 class="mb-3 mb-xl-4">Download our app</h6>
-                <p class="mb-3">
-                  Get instant access to exclusive features for FREE!
-                </p>
-                <div class="row g-2 mb-4 mb-sm-5">
-                  <!-- Google play store button -->
-                  <div class="col-5 col-sm-6 col-md-5 col-lg-4 col-xl-5">
-                    <a href="#">
-                      <img
-                        src="assets/images/elements/google-play.svg"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                  <!-- App store button -->
-                  <div class="col-5 col-sm-6 col-md-5 col-lg-4 col-xl-5">
-                    <a href="#">
-                      <img
-                        src="assets/images/elements/app-store.svg"
-                        alt="app-store"
-                      />
-                    </a>
-                  </div>
-                </div>
+              
 
                 <!-- Social buttons -->
+                 <div class="col-6 col-md-4">
                 <span class="heading-color fw-semibold">Follow on:</span>
                 <ul class="list-inline align-items-center mb-0 mt-3">
                   <li class="list-inline-item">
@@ -144,13 +120,14 @@ class Footer extends HTMLElement {
             </div>
           </div>
         </div>
+        </div>
 
         <!-- Divider -->
         <hr class="mt-xl-5 mb-0 opacity-1" />
 
         <!-- Bottom footer -->
         <div
-          class="d-md-flex justify-content-between align-items-center text-center text-lg-start py-4"
+          class="container d-md-flex justify-content-between align-items-center text-center text-lg-start py-4"
         >
           <!-- copyright text -->
 
