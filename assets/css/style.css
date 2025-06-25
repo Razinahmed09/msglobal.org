@@ -723,6 +723,12 @@ progress {
   line-height: 1.25;
 }
 
+.unFont_2 {
+  font-size: 50px;
+}
+.sec2_Ai .card-body h6 {
+  font-size: 25px !important;
+}
 @media (min-width: 1200px) {
   .display-5 {
     font-size: 4.6rem;
@@ -19767,7 +19773,12 @@ fieldset:disabled .btn {
 .webDev-svg {
   fill: #ffffff !important;
 }
-
+.digital-brand {
+  fill: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;;
+}
+.seo_sec {
+  fill: #fff !important;
+}
 .fill-mode {
   fill: var(--bs-gray-900) !important;
 }
@@ -26260,6 +26271,14 @@ button.text-primary-hover:hover {
 /* new portfolio */
 
 
+.career_sec .card h6 {
+  font-size: 18px;
+}
+
+.mobile_app .accordion .btn {
+      padding: 8px 14px !important;
+      margin: 6px 0 !important;
+}
 
 
 .portfolio-sec .card.card-img-scale .img-scale {
@@ -26415,7 +26434,9 @@ button.text-primary-hover:hover {
   .card-reverse p {
     height: auto;
   }
-
+  .digital-brand-sec2 .h-400px {
+    height: 330px !important;
+}
   .tech-card p {
     height: auto;
   }

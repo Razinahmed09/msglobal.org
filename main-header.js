@@ -217,6 +217,56 @@ class Header extends HTMLElement {
                             ><i class="bi bi-chevron-right"></i>Android & IOS Development
                           </a>
                         </div>
+                        <div
+                          class="dropdown-item bg-secondary-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3"
+                        >
+                          <a
+                            class="icon-link icon-link-hover text-primary-hover stretched-link"
+                            href="/digital-branding.html"
+                            target="_blank"
+                            ><i class="bi bi-chevron-right"></i>Digital Branding
+                          </a>
+                        </div>
+                        <div
+                          class="dropdown-item bg-secondary-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3"
+                        >
+                          <a
+                            class="icon-link icon-link-hover text-primary-hover stretched-link"
+                            href="/graphics-desiging.html"
+                            target="_blank"
+                            ><i class="bi bi-chevron-right"></i>Graphics Designing
+                          </a>
+                        </div>
+                        <div
+                          class="dropdown-item bg-secondary-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3"
+                        >
+                          <a
+                            class="icon-link icon-link-hover text-primary-hover stretched-link"
+                            href="/SEO.html"
+                            target="_blank"
+                            ><i class="bi bi-chevron-right"></i>SEO
+                          </a>
+                        </div>
+                        <div
+                          class="dropdown-item bg-secondary-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3"
+                        >
+                          <a
+                            class="icon-link icon-link-hover text-primary-hover stretched-link"
+                            href="/social-media.html"
+                            target="_blank"
+                            ><i class="bi bi-chevron-right"></i>Social Media Marketing
+                          </a>
+                        </div>
+                        <div
+                          class="dropdown-item bg-secondary-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3"
+                        >
+                          <a
+                            class="icon-link icon-link-hover text-primary-hover stretched-link"
+                            href="/content-writing.html"
+                            target="_blank"
+                            ><i class="bi bi-chevron-right"></i>Content Writing
+                          </a>
+                        </div>
                       </div>
 
                       <!-- <div class="col">

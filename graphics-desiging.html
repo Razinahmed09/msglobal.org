@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from stackbros.in/folio/landing/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 May 2025 10:42:26 GMT -->
+
+<head>
+  <title>MS Global Inc</title>
+
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="author" content="StackBros" />
+  <meta name="description" content="Ms Global Inc" />
+
+  <!-- Dark mode -->
+  <script>
+    const storedTheme = localStorage.getItem("theme");
+
+    const getPreferredTheme = () => {
+      if (storedTheme) {
+        return storedTheme;
+      }
+      return window.matchMedia("(prefers-color-scheme: light)").matches
+        ? "light"
+        : "light";
+    };
+
+    const setTheme = function (theme) {
+      if (
+        theme === "auto" &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+        document.documentElement.setAttribute("data-bs-theme", "dark");
+      } else {
+        document.documentElement.setAttribute("data-bs-theme", theme);
+      }
+    };
+
+    setTheme(getPreferredTheme());
+
+    window.addEventListener("DOMContentLoaded", () => {
+      var el = document.querySelector(".theme-icon-active");
+      if (el != "undefined" && el != null) {
+        const showActiveTheme = (theme) => {
+          const activeThemeIcon = document.querySelector(
+            ".theme-icon-active use"
+          );
+          const btnToActive = document.querySelector(
+            `[data-bs-theme-value="${theme}"]`
+          );
+          const svgOfActiveBtn = btnToActive
+            .querySelector(".mode-switch use")
+            .getAttribute("href");
+
+          document
+            .querySelectorAll("[data-bs-theme-value]")
+            .forEach((element) => {
+              element.classList.remove("active");
+            });
+
+          btnToActive.classList.add("active");
+          activeThemeIcon.setAttribute("href", svgOfActiveBtn);
+        };
+
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", () => {
+            if (storedTheme !== "light" || storedTheme !== "dark") {
+              setTheme(getPreferredTheme());
+            }
+          });
+
+        showActiveTheme(getPreferredTheme());
+
+        document
+          .querySelectorAll("[data-bs-theme-value]")
+          .forEach((toggle) => {
+            toggle.addEventListener("click", () => {
+              const theme = toggle.getAttribute("data-bs-theme-value");
+              localStorage.setItem("theme", theme);
+              setTheme(theme);
+              showActiveTheme(theme);
+            });
+          });
+      }
+    });
+  </script>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/MSglobal-images/MS LOGO-02.png" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
+    rel="stylesheet" />
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" />
+  <link rel="stylesheet" type="text/css" href="assets/vendor/swiper/swiper-bundle.min.css" />
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+  <style>
+   .card-reverse p {
+        display: -webkit-box;
+      -webkit-line-clamp: 3;            /* Show only 3 lines */
+      -webkit-box-orient: vertical;     /* Vertical orientation */
+      overflow: hidden;                 /* Hide overflowing text */
+      text-overflow: ellipsis;         /* Show "..." if overflowed */
+      line-height: 1.5em;               /* Optional: for more precise control */
+      max-height: 4.5em;                /* 3 lines × line-height (1.5em) */
+    }
+  </style>
+<body>
+  <!-- Header START -->
+  <script src="main-header.js"></script>
+  <main-header></main-header>
+  <!-- Header END -->
+
+  <!-- **************** MAIN CONTENT START **************** -->
+  <main>
+    <!-- ======================= Hero START -->
+    <section class="bg-dark position-relative pt-xl-8 overflow-hidden portfolio-banner webDev-banner">
+      <!-- Decoration START -->
+      <!-- Grad blur -->
+      <div class="position-absolute top-0 start-0 mt-n9 ms-n5">
+        <img src="assets/images/elements/grad-shape/blur-decoration.svg" class="blur-7 opacity-2" alt="Grad shape" />
+      </div>
+
+      <!-- Grad blur -->
+      <div class="position-absolute top-0 start-50 mt-n9 ms-n9">
+        <img src="assets/images/elements/grad-shape/blur-decoration.svg" class="blur-8 opacity-1" alt="Grad shape" />
+      </div>
+      <!-- Decoration START -->
+
+      <!-- Title and content -->
+      <div class="inner-container text-center mx-auto position-relative pt-4 pt-sm-5">
+        <!-- Breadcrumb -->
+        <nav class="mb-2 d-flex justify-content-center" aria-label="breadcrumb">
+          <ol class="breadcrumb breadcrumb-dark pt-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Graphics Designing
+            </li>
+          </ol>
+        </nav>
+        <!-- Title -->
+        <h1 class="mb-5 text-white">
+          <span class="heading-bg">Graphics Designing</span>
+        </h1>
+      </div>
+
+      <!-- Curve decoration -->
+      <span>
+        <svg class="position-absolute bottom-0 start-0 mb-n1 mb-lg-n5 mb-xxl-n7" viewBox="0 0 1950 237"
+          style="enable-background: new 0 0 1950 237" xml:space="preserve">
+          <path class="fill-body digital-brand" d="M1949.5,236.4H0v-164c717.2-131.2,1598.5-54.7,1949.5,0V236.4z" />
+        </svg>
+      </span>
+    </section>
+    <!-- ======================= Hero END -->
+
+    <!-- ======================= Office gallery START -->
+
+    <!-- ======================= Office gallery END -->
+
+
+<section class="bg-secondary position-relative pt-5">
+      <!-- Bottom shape decoration -->
+      <div class="position-absolute bottom-0 end-0 ms-n5 mb-n8 d-none d-lg-block z-index-2">
+        <img src="assets/images/elements/grad-shape/02.png" class="h-200px solutionVectors" alt="Shape" />
+      </div>
+
+      <div class="container">
+        <!-- Title -->
+        <div class="inner-container-small text-center mb-5">
+          <h2 class="mb-0">
+            Solutions <span class="heading-bg">We Provide</span>
+          </h2>
+        </div>
+
+        <!-- Services START -->
+        <div class="row justify-content-center g-4 g-lg-5">
+          <!-- Service item -->
+
+          <!-- Service item -->
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="card card-hover-shadow card-hover-transition rounded-4 h-auto p-4">
+              <!-- Card header -->
+              <div class="card-header bg-transparent p-0 mb-4">
+                <!-- Icon -->
+                <div class="icon-lg d-flex justify-content-center align-items-center text-white rounded-circle">
+                  <img src="assets/images/services/3d-icon/development.png" alt="" />
+                </div>
+              </div>
+              <div class="card-reverse">
+                <div>
+                  <p>
+                    We offer expert Flash-based website and presentation development with rich animations, interactive content, and multimedia integration. Ideal for games, business presentations, and engaging user interfaces, Flash supports audio/video streaming and dynamic graphics using ActionScript.
+                  </p>
+                  <a href="#" class="link-primary-grad icon-link icon-link-hover stretched-link mb-0">Request a Quote<i
+                      class="bi bi-arrow-right"></i></a>
+                </div>
+                <!-- Card body -->
+                <div class="card-footer bg-transparent mt-auto p-0">
+                  <h6><a href="#">Flash Development</a></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 ">
+            <div class="card card-hover-shadow card-hover-transition rounded-4 h-auto p-4">
+              <!-- Card header -->
+              <div class="card-header bg-transparent p-0 mb-4">
+                <!-- Icon -->
+                <div class="icon-lg d-flex justify-content-center align-items-center text-white rounded-circle">
+                  <img src="assets/images/services/3d-icon/marketing.png" alt="" />
+                </div>
+              </div>
+              <div class="card-reverse">
+                <div>
+                  <p>
+                    We create logos that reflect your brand identity with creativity and precision. Whether through design contests or direct collaboration, our process involves concept creation, design iteration, and final delivery in brand-ready formats.
+                  </p>
+                  <a href="#" class="link-primary-grad icon-link icon-link-hover stretched-link mb-0">Request a Quote <i
+                      class="bi bi-arrow-right"></i></a>
+                </div>
+                <!-- Card body -->
+                <div class="card-footer bg-transparent mt-auto p-0">
+                  <h6><a href="#"> Logo Designing</a></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 ">
+            <div class="card card-hover-shadow card-hover-transition rounded-4 h-auto p-4">
+              <!-- Card header -->
+              <div class="card-header bg-transparent p-0 mb-4">
+                <!-- Icon -->
+                <div class="icon-lg d-flex justify-content-center align-items-center text-white rounded-circle">
+                  <img src="assets/images/services/3d-icon/brand.png" alt="" />
+                </div>
+              </div>
+              <div class="card-reverse">
+                <div>
+                  <p>
+                    We design professional and impactful visiting cards that serve as a timeless introduction to your business. Each card reflects your brand’s personality and adheres to modern design and business etiquette.
+                  </p>
+                  <a href="#" class="link-primary-grad icon-link icon-link-hover stretched-link mb-0">Request a Quote <i
+                      class="bi bi-arrow-right"></i></a>
+                </div>
+                <!-- Card body -->
+                <div class="card-footer bg-transparent mt-auto p-0">
+                  <h6><a href="#">Visiting Cards</a></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 ">
+            <div class="card card-hover-shadow card-hover-transition rounded-4 h-auto p-4">
+              <!-- Card header -->
+              <div class="card-header bg-transparent p-0 mb-4">
+                <!-- Icon -->
+                <div class="icon-lg d-flex justify-content-center align-items-center text-white rounded-circle">
+                  <img src="assets/images/services/3d-icon/database.png" alt="" />
+                </div>
+              </div>
+              <div class="card-reverse">
+                <div>
+                  <p>
+                    We design attractive, conversion-focused web banners for online advertising. These banners link to your website and are optimized for ad networks, delivering measurable traffic and brand visibility.
+                  </p>
+                  <a href="#" class="link-primary-grad icon-link icon-link-hover stretched-link mb-0">Request a Quote <i
+                      class="bi bi-arrow-right"></i></a>
+                </div>
+                <!-- Card body -->
+                <div class="card-footer bg-transparent mt-auto p-0">
+                  <h6><a href="#">Web Banners</a></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <!-- Services END -->
+
+        <!-- CTA START -->
+        <div class="inner-container-small bg-primary-grad rounded-3 text-center py-3 mt-5 d-none">
+          <p class="text-white mb-0 px-2 px-sm-5 px-md-0">
+            ✌️ Ready to elevate your digital presence?
+            <a href="#" class="fw-semibold hover-underline-animation text-white">Hire us now</a>
+          </p>
+        </div>
+        <!-- CTA END -->
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+  <!-- Product features START -->
+
+    <!-- =======================
+        Product features END -->
+
+
+
+    <!-- =======================
+newsletter START -->
+  
+    <!-- ======================= newsletter END -->
+  </main>
+  <!-- **************** MAIN CONTENT END **************** -->
+
+  <!-- =======================Footer START -->
+ <script src="main-footer.js"></script>
+  <main-footer></main-footer>
+  <!-- =======================Footer END -->
+
+  <!-- Back to top -->
+  <div class="back-top"></div>
+
+  <!-- Bootstrap JS -->
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--Vendors-->
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounterjs/dist/purecounter_vanilla.js"></script>
+
+  <!-- Theme Functions -->
+  <script src="assets/js/functions.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="/assets/js/gsap.js"></script>
+</body>
+
+<!-- Mirrored from stackbros.in/folio/landing/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 May 2025 10:42:53 GMT -->
+
+</html>
