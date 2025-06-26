@@ -96,22 +96,22 @@ class Footer extends HTMLElement {
                 <span class="heading-color fw-semibold">Follow on:</span>
                 <ul class="list-inline align-items-center mb-0 mt-3">
                   <li class="list-inline-item">
-                    <a class="btn btn-xs btn-icon bg-facebook" href="#"
+                    <a class="btn btn-xs btn-icon bg-facebook" href="https://www.facebook.com/Msglobalinc1/"
                       ><i class="bi bi-facebook lh-base"></i
                     ></a>
                   </li>
                   <li class="list-inline-item">
-                    <a class="btn btn-xs btn-icon bg-instagram" href="#"
-                      ><i class="bi bi-instagram lh-base"></i
+                    <a class="btn btn-xs btn-icon bg-instagram" href="https://www.youtube.com/channel/UCkh34Uq4_jcMMwI4DOABExg"
+                      ><i class="bi bi-youtube lh-base"></i
                     ></a>
                   </li>
                   <li class="list-inline-item">
-                    <a class="btn btn-xs btn-icon bg-twitter-x" href="#"
+                    <a class="btn btn-xs btn-icon bg-twitter-x" href="https://x.com/msglobalinc"
                       ><i class="bi bi-twitter-x lh-base"></i
                     ></a>
                   </li>
                   <li class="list-inline-item">
-                    <a class="btn btn-xs btn-icon bg-linkedin" href="#"
+                    <a class="btn btn-xs btn-icon bg-linkedin" href="https://www.linkedin.com/company/ms-global-inc"
                       ><i class="bi bi-linkedin lh-base"></i
                     ></a>
                   </li>

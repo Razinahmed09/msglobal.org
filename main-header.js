@@ -29,16 +29,16 @@ class Header extends HTMLElement {
           <ul class="list-inline mb-0">
             <li class="list-inline-item small text-white">Follow us on:</li>
             <li class="list-inline-item">
-              <a href="#" class="link-white"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.facebook.com/Msglobalinc1/" class="link-white"><i class="bi bi-facebook"></i></a>
             </li>
             <li class="list-inline-item">
-              <a href="#" class="link-white"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCkh34Uq4_jcMMwI4DOABExg" class="link-white"><i class="bi bi-youtube"></i></a>
             </li>
             <li class="list-inline-item">
-              <a href="#" class="link-white"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://x.com/msglobalinc" class="link-white"><i class="bi bi-twitter-x"></i></a>
             </li>
             <li class="list-inline-item">
-              <a href="#" class="link-white"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.linkedin.com/company/ms-global-inc" class="link-white"><i class="bi bi-linkedin"></i></a>
             </li>
           </ul>
         </div>
@@ -58,7 +58,7 @@ class Header extends HTMLElement {
               />
               <img
                 class="dark-mode-item navbar-brand-item"
-                src="assets/images/MSglobal-images/logo.png"
+                src="assets/images/MSglobal-images/MS LOGO-02.png"
                 alt="logo"
               />
             </a>

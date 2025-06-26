@@ -21825,13 +21825,13 @@ a.badge:hover {
 .promote-Sec .list-group-borderless .list-group-item {
   font-size: 15px;
   font-weight: 300 !important;
-  color: #000000 !important;
+  /* color: #000000 !important; */
   font-family: 'Poppins';
 }
 
 .promote-Sec {
   background-color: white !important;
-  margin: 5rem 0;
+  /* margin: 5rem 0; */
   padding: 0;
 }
 
@@ -26411,6 +26411,9 @@ button.text-primary-hover:hover {
   .years_Sec .text-bg-img {
     margin-left: 0rem;
     font-size: 245px;
+  }
+  .newsletter-loader {
+    display: none;
   }
 }
 
